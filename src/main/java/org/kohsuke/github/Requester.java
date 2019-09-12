@@ -568,7 +568,7 @@ class Requester {
         }
 
         setRequestMethod(uc);
-        uc.setRequestProperty("Accept-Encoding", "gzip");
+        uc.setRequestProperty("TE", "gzip");
     }
 
     private void setRequestMethod(HttpURLConnection uc) throws IOException {
